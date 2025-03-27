@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -7,7 +6,6 @@ body {
     color: #fff;
 }
 
-/* Header Section */
 header {
     text-align: center;
     padding: 50px 20px;
@@ -31,7 +29,6 @@ p {
     font-size: 1.2em;
 }
 
-/* Navigation Bar */
 nav {
     background: #1c1c1c;
     padding: 15px 0;
@@ -42,7 +39,20 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: none;
+    flex-direction: column;
+    background: #1c1c1c;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
 }
+nav ul.show {
+    display: flex;
+}
+
+
 
 nav ul li {
     display: inline;
@@ -61,7 +71,6 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Sections */
 section {
     padding: 50px;
     max-width: 1000px;
@@ -70,7 +79,28 @@ section {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
     margin-top: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #DDA853;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
 
 h2 {
     color: #DDA853;
@@ -107,7 +137,6 @@ h2 {
 }
 
 
-/* Contact Section */
 #contact a {
     color: #DDA853;
     text-decoration: none;
@@ -115,4 +144,37 @@ h2 {
 
 #contact a:hover {
     text-decoration: underline;
+}
+
+
+#comments {
+    margin-top: 30px;
+    padding: 20px;
+    background: #292929;
+    border-radius: 10px;
+}
+#commentForm {
+    display: flex;
+    flex-direction: column;
+}
+#commentInput {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+#commentForm button {
+    background: #DDA853;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#commentList p {
+    background: #1a1a1a;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
 }
