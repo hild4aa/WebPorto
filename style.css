@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#183B4E;
+    color: #fff;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #DDA853;
+}
+
+h1 {
+    color: #DDA853;
+    font-size: 2.5em;
+    margin: 10px 0 5px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Navigation Bar */
+nav {
+    background: #1c1c1c;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #DDA853;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    max-width: 1000px;
+    margin: auto;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    margin-top: 30px;
+}
+
+h2 {
+    color: #DDA853;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* My Services */
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    width: 30%;
+    background: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.services-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.service-box:hover {
+    background: #DDA853;
+    color: #fff;
+}
+
+
+/* Contact Section */
+#contact a {
+    color: #DDA853;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
